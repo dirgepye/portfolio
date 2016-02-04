@@ -3,15 +3,20 @@
 <head>
     <title>Shawn Stenhouse Portfolio - Login Screens</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Hind:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
 
 </head>
 
-<body>
-    <!--<div class="navbar" >
+<div class="navbar">
         <p>Test</p>
-    </div> -->
-
+    </div> 
+    
+<body>
+    
+    <!-- DESCRIPTION -->
     <div class="section about">
         <div class="form-content">
             <div class="form-content__title">
@@ -24,19 +29,122 @@
             </div>
         </div>
     </div>
+
+    <!-- FORM ONE -->
+
     <div class="section form-one">
-        <form>
-            <input type="text" id="login-username" placeholder="username" class="form-one__username">
-            <br>
-            <input type="text" id="login-password" placeholder="password" class="form-one__password">
-            <br>
-            <input type="checkbox"> Remember me <a href="#">Forgot your password?</a>
-            <br>
-            <input type="submit" id="login-submit" value="woooo" class="form-one__submit">
-        </form>
-        <p>Don't have an account? <a href="#">Sign up now!</a></p>
+        <div class="form-one__basic">
+            <form>
+                <h4>Welcome Back!</h4>
+                <input type="text" id="login-username" placeholder="username" class="form-one__field">
+                <br>
+                <input type="text" id="login-password" placeholder="password" class="form-one__field">
+                <br>
+                <div class="clearfix blah">
+                    <label>
+                        <input type="checkbox" name="remember_me" id="remember_me2" value="true" class="remember_me"> Remember me
+                    </label>
+                    <a href="#">Forgot your password?</a>
+                </div>
+
+                <input type="submit" id="login-submit" value="Log In!" class="form-one__submit">
+
+            </form>
+            <p>Don't have an account? <a href="#">Sign up now!</a></p>
+        </div>
+
+        <div class="form-one__basic">
+            <form>
+                <h4>Climb Aboard!</h4>
+                <input type="text" id="login-username" placeholder="first name" class="form-one__field">
+                <input type="text" id="login-username" placeholder="lastname" class="form-one__field">
+                <input type="text" id="login-username" placeholder="username" class="form-one__field">
+                <input type="text" id="login-password" placeholder="password" class="form-one__field">
+                <input type="text" id="login-username" placeholder="confirm password" class="form-one__field">
+
+                <div class="clearfix blah">
+                    <label>
+                        <input type="checkbox" name="remember_me" id="remember_me2" value="true" class="remember_me"> By checking this box I agree to the <a href="#">Terms and Agreements</a>
+                    </label>
+                    <a href="#">Forgot your password?</a>
+                </div>
+
+                <input type="submit" id="login-submit" value="Log In!" class="form-one__submit">
+
+            </form>
+            <p>Don't have an account? <a href="#">Sign up now!</a></p>
+        </div>
     </div>
+
+    <!-- FORM TWO -->
+
+    <div class="section form-two">
+        <div class="form-two__basic">
+            <form>
+                <h4>Welcome Back!</h4>
+                <div class="fields">
+                <input type="text" id="login-username" placeholder="username" class="form-two__field">
+                
+                <input type="text" id="login-password" placeholder="password" class="form-two__field">
+                </div>
+                <div class="clearfix blah">
+                    <label>
+                        <input type="checkbox" name="remember_me" id="remember_me2" value="true" class="remember_me"> Remember me
+                    </label>
+                    <a href="#">Forgot your password?</a>
+                </div>
+
+                <input type="submit" id="login-submit" value="Log In!" class="form-two__submit"> Don't have an account? <span class="btn sign-up">Sign-up now!</a>
+
+            </form>
+        </div>
+        
+        <div class="form-two__basic form-two--signup" style="display:none">
+        <form>
+            <h4>Climb Aboard!</h4>
+            <input type="text" id="login-username" placeholder="first name" class="form-two__field">
+            <input type="text" id="login-username" placeholder="lastname" class="form-two__field">
+            <input type="text" id="login-username" placeholder="username" class="form-two__field">
+            <input type="text" id="login-password" placeholder="password" class="form-two__field">
+            <input type="text" id="login-username" placeholder="confirm password" class="form-two__field">
+
+            <div class="clearfix blah">
+                <label>
+                    <input type="checkbox" name="remember_me" id="remember_me2" value="true" class="remember_me"> By checking this box I agree to the <a href="#">Terms and Agreements</a>
+                </label>
+            </div>
+
+            <input type="submit" id="login-submit" value="Log In!" class="form-one__submit">
+
+        </form>
+        <p>Don't have an account? <a  href="#">Sign up now!</a></p>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="style">
+        <button>dsfads</button>
+    </div>
+    <div class="ringading">
+        <button>dsfads</button>
+    </div>
+    <div class="doodledoo">
+        <button>dsfads</button>
+    </div>
+    <div class="btn btn-default">fdsaf</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
