@@ -1,5 +1,5 @@
 .form-one {
-    // background-color: $dark-gray;
+    // background-color: $form-one-border;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -7,11 +7,11 @@
 
 .form-one__basic {
     font-family: 'PT Sans', sans-serif;
-    color: $navy;
-    background-color: $light-gray;
+    color: $form-one-text;
+    background-color: $form-one-background;
     border-radius: 3px;
     padding: 10px;
-    border: 1px solid $dark-gray;
+    border: 1px solid $form-one-border;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +21,7 @@
     
     h4 {
         font-size: 23px;
-        border-bottom: 1px solid $med-gray;
+        border-bottom: 1px solid $form-one-inner-border;
         padding-bottom: 8px;
         margin-bottom: 8px;
     }
@@ -34,7 +34,7 @@
     
     form {
     
-        border-bottom: 1px solid $med-gray;
+        border-bottom: 1px solid $form-one-inner-border;
         padding-bottom: 8px;
         margin-bottom: 8px;
         
@@ -46,7 +46,7 @@
     }
     
    .form-one__field {
-       border: 1px solid $med-gray;
+       border: 1px solid $form-one-inner-border;
        font-size: 14px;
        margin: 6px 0px;
        padding: 6px;
@@ -58,8 +58,8 @@
 //   }
    
    .form-one__submit {
-       background-color: $turquoise;
-       color: $navy;
+       background-color: $form-one-button-link;
+       color: $form-one-text;
        font-size: 20px;
        padding: 4px;
        width: 100%;
@@ -68,9 +68,61 @@
    
    a {
        text-decoration: none;
-       color: $turquoise;
+       color: $form-one-button-link;
        
    }
+}
+
+.style-buttons {
+    
+}
+
+
+
+
+
+.style-class-one {
+    background-color: $form-two-background;
+    font-family: 'Quattrocento', serif;
+    color: $form-two-text;
+    background-color: $form-two-background;
+    border: 1px solid $form-two-border;
+    
+    h4 {
+        border-bottom: 1px solid $form-two-inner-border;
+    }
+
+    form {
+        border-bottom: 1px solid $form-two-inner-border;
+
+    }
+    
+   .form-one__field {
+       border: 1px solid $form-two-inner-border;
+   }
+   
+//   .form-one__password {
+//       @extend .form-one__username;
+//   }
+   
+   .form-one__submit {
+       background-color: $form-two-button-link;
+       color: $form-two-text;
+   }
+   
+   a {
+       color: $form-two-button-link;
+       
+   }
+
+}
+
+.style-class-two {
+    background-color: red;
+}
+
+.style-class-three {
+    background-color: blue;
 }
 
 // .style-class-three {
