@@ -20,51 +20,50 @@ $(document).ready(function() {
 	
 	
 	$('.style-one').on('click', function() {
-		if ($('.form-one__basic').hasClass('style-class-two style-class-three')) {
-			$('.form-one__basic').removeClass('style-class-two style-class-three');
-			$('.form-one__basic').addClass('style-class-one');
+		if ($('.form-a__basic').hasClass('style-class-two style-class-three')) {
+			$('.form-a__basic').removeClass('style-class-two style-class-three');
+			$('.form-a__basic').addClass('style-class-one');
 		}
 		
-		else if ($('.form-one__basic').hasClass('style-class-one')) {
-			$('.form-one__basic').removeClass('style-class-one');
+		else if ($('.form-a__basic').hasClass('style-class-one')) {
+			$('.form-a__basic').removeClass('style-class-one style-class-two style-class-three');
 		}
 		else {
-			$('.form-one__basic').addClass('style-class-one');
+			$('.form-a__basic').addClass('style-class-one');
 		}
 	});
 	
 	$('.style-two').on('click', function() {
-		if ($('.form-one__basic').hasClass('style-class-one style-class-three')) {
-			$('.form-one__basic').removeClass('style-class-one style-class-three');
-			$('.form-one__basic').addClass('style-class-two');
+		if ($('.form-a__basic').hasClass('style-class-one style-class-three')) {
+			$('.form-a__basic').removeClass('style-class-one style-class-three');
+			$('.form-a__basic').addClass('style-class-two');
 		}
 		
-		else if ($('.form-one__basic').hasClass('style-class-two')) {
-			$('.form-one__basic').removeClass('style-class-two');
+		else if ($('.form-a__basic').hasClass('style-class-two')) {
+			$('.form-a__basic').removeClass('style-class-one style-class-two style-class-three');
 		}
 		else {
-			$('.form-one__basic').addClass('style-class-two');
+			$('.form-a__basic').addClass('style-class-two');
 		}
 	});
 	
 	$('.style-three').on('click', function() {
-		if ($('.form-one__basic').hasClass('style-class-one style-class-two')) {
-			$('.form-one__basic').removeClass('style-class-one style-class-two');
-			$('.form-one__basic').addClass('style-class-three');
+		if ($('.form-a__basic').hasClass('style-class-one style-class-two')) {
+			$('.form-a__basic').removeClass('style-class-one style-class-two');
+			$('.form-a__basic').addClass('style-class-three');
 		}
 		
-		else if ($('.form-one__basic').hasClass('style-class-three')) {
-			$('.form-one__basic').removeClass('style-class-three');
+		else if ($('.form-a__basic').hasClass('style-class-three')) {
+			$('.form-a__basic').removeClass('style-class-one style-class-two style-class-three');
 		}
 		else {
-			$('.form-one__basic').addClass('style-class-three');
+			$('.form-a__basic').addClass('style-class-three');
 		}
 	});
 	
+	$('.form-four').parallax({imageSrc : 'forest_bg.jpg'});
 	
-	
-	
-	
+	$('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
 	
 	
 	

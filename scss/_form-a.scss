@@ -1,17 +1,17 @@
-.form-one {
-    // background-color: $form-one-border;
+.form-a {
+    // background-color: $form-a-border;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.form-one__basic {
+.form-a__basic {
     font-family: 'PT Sans', sans-serif;
-    color: $form-one-text;
-    background-color: $form-one-background;
+    color: $form-a-text;
+    background-color: $form-a-background;
     border-radius: 3px;
     padding: 10px;
-    border: 1px solid $form-one-border;
+    border: 1px solid $form-a-border;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +21,7 @@
     
     h4 {
         font-size: 23px;
-        border-bottom: 1px solid $form-one-inner-border;
+        border-bottom: 1px solid $form-a-inner-border;
         padding-bottom: 8px;
         margin-bottom: 8px;
     }
@@ -34,41 +34,42 @@
     
     form {
     
-        border-bottom: 1px solid $form-one-inner-border;
+        border-bottom: 1px solid $form-a-inner-border;
         padding-bottom: 8px;
         margin-bottom: 8px;
         
         // input {
-        // border: none;
+        // border: na;
         // padding: 10px 0px;
         // }
     
     }
     
-   .form-one__field {
-       border: 1px solid $form-one-inner-border;
+   .form-a__field {
+       border: 1px solid $form-a-inner-border;
        font-size: 14px;
        margin: 6px 0px;
        padding: 6px;
        width: 100%;
    }
    
-//   .form-one__password {
-//       @extend .form-one__username;
+//   .form-a__password {
+//       @extend .form-a__username;
 //   }
    
-   .form-one__submit {
-       background-color: $form-one-button-link;
-       color: $form-one-text;
+   .form-a__submit {
+       background-color: $form-a-button-link;
+       color: $form-a-text;
        font-size: 20px;
        padding: 4px;
        width: 100%;
        border: none;
+       
    }
    
    a {
-       text-decoration: none;
-       color: $form-one-button-link;
+       text-decoration: na;
+       color: $form-a-button-link;
        
    }
 }
@@ -82,36 +83,36 @@
 
 
 .style-class-one {
-    background-color: $form-two-background;
+    background-color: $form-b-background;
     font-family: 'Quattrocento', serif;
-    color: $form-two-text;
-    background-color: $form-two-background;
-    border: 1px solid $form-two-border;
+    color: $form-b-text;
+    background-color: $form-b-background;
+    border: 1px solid $form-b-border;
     
     h4 {
-        border-bottom: 1px solid $form-two-inner-border;
+        border-bottom: 1px solid $form-b-inner-border;
     }
 
     form {
-        border-bottom: 1px solid $form-two-inner-border;
+        border-bottom: 1px solid $form-b-inner-border;
 
     }
     
-   .form-one__field {
-       border: 1px solid $form-two-inner-border;
+   .form-a__field {
+       border: 1px solid $form-b-inner-border;
    }
    
-//   .form-one__password {
-//       @extend .form-one__username;
+//   .form-a__password {
+//       @extend .form-a__username;
 //   }
    
-   .form-one__submit {
-       background-color: $form-two-button-link;
-       color: $form-two-text;
+   .form-a__submit {
+       background-color: $form-b-button-link;
+       color: $form-b-text;
    }
    
    a {
-       color: $form-two-button-link;
+       color: $form-b-button-link;
        
    }
 
@@ -129,7 +130,7 @@
 //     background-color: green;
 // }
 
-// .style-class-two {
+// .style-class-b {
 //     background-color: orange;
 // }
 // .style-class {

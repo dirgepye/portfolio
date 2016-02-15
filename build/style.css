@@ -1,9 +1,11 @@
-.form-one {
+@import url(https://fonts.googleapis.com/css?family=Abel);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+.form-a {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.form-one__basic {
+.form-a__basic {
   font-family: 'PT Sans', sans-serif;
   color: #0A2745;
   background-color: #DED9DC;
@@ -16,32 +18,32 @@
   font-size: 16px;
   width: 350px;
   margin: 10px; }
-  .form-one__basic h4 {
+  .form-a__basic h4 {
     font-size: 23px;
     border-bottom: 1px solid #A4ADB0;
     padding-bottom: 8px;
     margin-bottom: 8px; }
-  .form-one__basic .blah a {
+  .form-a__basic .blah a {
     float: right; }
-  .form-one__basic form {
+  .form-a__basic form {
     border-bottom: 1px solid #A4ADB0;
     padding-bottom: 8px;
     margin-bottom: 8px; }
-  .form-one__basic .form-one__field {
+  .form-a__basic .form-a__field {
     border: 1px solid #A4ADB0;
     font-size: 14px;
     margin: 6px 0px;
     padding: 6px;
     width: 100%; }
-  .form-one__basic .form-one__submit {
+  .form-a__basic .form-a__submit {
     background-color: #16718C;
     color: #0A2745;
     font-size: 20px;
     padding: 4px;
     width: 100%;
     border: none; }
-  .form-one__basic a {
-    text-decoration: none;
+  .form-a__basic a {
+    text-decoration: na;
     color: #16718C; }
 
 .style-class-one {
@@ -54,9 +56,9 @@
     border-bottom: 1px solid #525252; }
   .style-class-one form {
     border-bottom: 1px solid #525252; }
-  .style-class-one .form-one__field {
+  .style-class-one .form-a__field {
     border: 1px solid #525252; }
-  .style-class-one .form-one__submit {
+  .style-class-one .form-a__submit {
     background-color: #822626;
     color: #262525; }
   .style-class-one a {
@@ -68,15 +70,15 @@
 .style-class-three {
   background-color: blue; }
 
-.form-two {
+.form-b {
   background-color: #ddd; }
 
-.form-two {
+.form-b {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.form-two__basic {
+.form-b__basic {
   font-family: "Share Tech Mono";
   color: #4169E1;
   background-color: #ECECEE;
@@ -89,17 +91,17 @@
   font-size: 16px;
   width: 350px;
   margin: 10px; }
-  .form-two__basic h4 {
+  .form-b__basic h4 {
     font-size: 23px;
     padding-bottom: 8px;
     margin-bottom: 8px;
     text-align: center; }
-  .form-two__basic .blah a {
+  .form-b__basic .blah a {
     float: right; }
-  .form-two__basic form {
+  .form-b__basic form {
     padding-bottom: 8px;
     margin-bottom: 8px; }
-  .form-two__basic input[type=text], .form-two__basic .form-two--signup input[type=submit], .form-two--signup .form-two__basic input[type=submit] {
+  .form-b__basic input[type=text], .form-b__basic .form-b--signup input[type=submit], .form-b--signup .form-b__basic input[type=submit] {
     border: none;
     background-color: #4169E1;
     border-bottom: 2px solid #283198;
@@ -110,38 +112,42 @@
     padding: 6px;
     width: 100%;
     transition: ease-in-out, background-color .10s ease-in-out; }
-  .form-two__basic input[type=text]:focus, .form-two__basic .form-two--signup input[type=submit]:focus, .form-two--signup .form-two__basic input[type=submit]:focus {
+  .form-b__basic input[type=text]:focus, .form-b__basic .form-b--signup input[type=submit]:focus, .form-b--signup .form-b__basic input[type=submit]:focus {
     outline: none;
     background-color: #283198; }
-  .form-two__basic input[type=submit] {
+  .form-b__basic input[type=submit] {
     background-color: #ECECEE;
     border: 4px solid #4169E1;
     color: #4169E1;
     font-size: 20px;
     padding: 4px;
     width: 100%; }
-  .form-two__basic a {
+  .form-b__basic a {
     text-decoration: underline;
     color: red; }
 
-.form-two--signup {
+.form-b--signup {
   border: none;
   border-bottom: 3px solid #820805;
   border-right: 3px solid #820805;
   background-color: #B5191D;
   color: #ECECEE; }
-  .form-two--signup input[type=text], .form-two--signup input[type=submit] {
+  .form-b--signup input[type=text], .form-b--signup input[type=submit] {
     border: none;
     background-color: #ECECEE;
     border-bottom: 3px solid #820805;
     border-right: 3px solid #820805;
     color: #820805; }
-  .form-two--signup input[type=text]:focus, .form-two--signup input[type=submit]:focus {
+  .form-b--signup input[type=text]:focus, .form-b--signup input[type=submit]:focus {
     outline: none;
     background-color: #ECECEE; }
 
 html {
   box-sizing: border-box; }
+
+input[type=text]:focus, .form-b--signup input[type=submit]:focus {
+  box-shadow: none;
+  outline: none; }
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -202,9 +208,60 @@ html {
   padding: 20px; }
 
 .main__title {
-  background-color: #171431;
-  font-family: 'Voltaire', sans-serif;
-  color: #F1F2D1;
-  border-bottom: 10px solid #E32F23; }
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  background-color: #000019;
+  border-bottom: 9px solid #E32F23; }
+  .main__title h1 {
+    font-family: 'Abel', sans-serif;
+    font-size: 150px;
+    color: #F1F2D1;
+    text-transform: uppercase; }
+  .main__title h2 {
+    font-family: 'Abel', sans-serif;
+    font-size: 50px;
+    color: #F1F2D1; }
+
+.form-d {
+  background-image: url("../forest_bg.jpg");
+  font-family: 'Poiret One', cursive;
+  font-size: 17px; }
+
+.form-d__basic {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 10px;
+  color: #DDD; }
+  .form-d__basic h4 {
+    margin: auto;
+    font-size: 35px; }
+  .form-d__basic input {
+    font-size: 20px;
+    padding: 5px 5px 0 5px; }
+  .form-d__basic input[type=submit] {
+    color: #222;
+    border: none;
+    font-weight: bold;
+    padding: 5px; }
+  .form-d__basic a {
+    font-weight: bold; }
+
+.form-d__basic form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; }
+
+.form-d__field {
+  border: none;
+  border-bottom: 2px solid #EEE;
+  background: none;
+  font-size: 14px;
+  margin: 5px 0; }
 
 /*# sourceMappingURL=style.css.map */

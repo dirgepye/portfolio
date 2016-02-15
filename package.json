@@ -1,0 +1,36 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio for shawn stenhouse",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dirgepye/portfolio.git"
+  },
+  "keywords": [
+    "shawn",
+    "stenhouse",
+    "portfolio",
+    "montreal",
+    "web",
+    "development",
+    "web",
+    "design",
+    "front",
+    "end",
+    "development"
+  ],
+  "author": "shawn stenhouse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dirgepye/portfolio/issues"
+  },
+  "homepage": "https://github.com/dirgepye/portfolio#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13"
+  }
+}

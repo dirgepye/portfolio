@@ -1,15 +1,15 @@
-.form-two {
+.form-b {
     background-color: #ddd;
 }
 
-.form-two {
+.form-b {
     // background-color: $dark-gray;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.form-two__basic {
+.form-b__basic {
     font-family: 'Share Tech Mono', ;
     color: $dark-blue;
     background-color: $white;
@@ -89,7 +89,7 @@
 }
 
 
-.form-two--signup {
+.form-b--signup {
     
     border: none;
     border-bottom: 3px solid $dark-red;
