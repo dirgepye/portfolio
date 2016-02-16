@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Abel);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
 .form-a {
   display: flex;
   flex-direction: row;
@@ -213,21 +214,27 @@ input[type=text]:focus, .form-b--signup input[type=submit]:focus {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-content: flex-start;
   align-items: center;
   background-color: #000019;
   border-bottom: 9px solid #E32F23; }
+  .main__title .index__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
   .main__title h1 {
-    font-family: 'Abel', sans-serif;
+    font-family: 'Amatic SC', cursive;
     font-size: 150px;
-    color: #F1F2D1;
-    text-transform: uppercase; }
+    color: #111;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
   .main__title h2 {
     font-family: 'Abel', sans-serif;
-    font-size: 50px;
-    color: #F1F2D1; }
+    font-size: 40px;
+    color: #111; }
 
 .form-d {
   background-image: url("../forest_bg.jpg");
@@ -249,6 +256,8 @@ input[type=text]:focus, .form-b--signup input[type=submit]:focus {
     border: none;
     font-weight: bold;
     padding: 5px; }
+  .form-d__basic input[type=submit]:focus {
+    padding: 0 10px; }
   .form-d__basic a {
     font-weight: bold; }
 

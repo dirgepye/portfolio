@@ -4,6 +4,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Abel);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
 
 html {
   box-sizing: border-box;
@@ -110,25 +111,33 @@ input[type=text]:focus {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-content: flex-start;
     align-items: center;
     
-    background-color: #000019; // navy
+    background-color: #000019; 
     border-bottom: 9px solid #E32F23;
     
+    .index__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start
+    }
+    
     h1 {
-    font-family: 'Abel', sans-serif;
+    font-family: 'Amatic SC', cursive;
     font-size: 150px;
-    color: #F1F2D1; //ba 
+    color: #111; //ba 
     text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     }
     
     h2 {
         font-family: 'Abel', sans-serif;
-        font-size: 50px;
-        color: #F1F2D1;
+        font-size: 40px;
+        color: #111;
     }
 }
 
@@ -189,4 +198,8 @@ input[type=text]:focus {
     font-size: 14px;
     margin: 5px 0;
     
+}
+
+.fields {
+    width: 100%;
 }
