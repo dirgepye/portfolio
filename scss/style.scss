@@ -1,12 +1,45 @@
 @import 'variables'; 
 @import 'form-a';
 @import 'form-b';
+@import 'form-d';
 
 @import url(https://fonts.googleapis.com/css?family=Abel);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC);
 @import url(https://fonts.googleapis.com/css?family=Reenie+Beanie);
 @import url(https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco);
+@import url(https://fonts.googleapis.com/css?family=Sumana);
+
+
+@mixin flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex-row {
+    -webkit-flex-direction: row;
+    flex-direction: row;    
+}
+
+@mixin flex-column {
+    -webkit-flex-direction: column;
+    flex-direction: column;    
+}
+
+@mixin flex-row-reverse {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;    
+}
+
+@mixin flex-column-reverse {
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;    
+}
+
+
 
 html {
   box-sizing: border-box;
@@ -14,157 +47,92 @@ html {
 
 input[type=text]:focus {
     box-shadow: none;
+    
     outline: none;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
     margin: 0;
     padding: 0;
+    //-webkit-font-smoothing: antialiased;
+
 }
 
-.navbar {
-    position: fixed;
-    background-color: blue;
-    width: 100%;
-    height: 60px;
-}
-
-
-.section {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-
-
-
-// FORM b
-
-
-
-
-//INDEX
-
-.main {
-    h1 {
-        font-family: 'Amatic SC', cursive;
-        font-family: 'Reenie Beanie', cursive;
-        font-family: 'Sue Ellen Francisco', cursive;
-    }
-}
 
 .main__head {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    @include flex;
+    @include flex-column;
+    justify-content: center;
     align-items: center;
-    
-    img {
-        max-height: 300px;
-        max-width: 300px;
-    }
-    
-    .index__text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start
-    }
-    
-    h1 {
-        font-family: 'Amatic SC', cursive;
-        font-family: 'Reenie Beanie', cursive;
-        font-family: 'Sue Ellen Francisco', cursive;
-        font-size: 140px;
-        color: #47131a; //ba 
-        text-transform: lowercase;
-        -webkit-font-smoothing: antialiased;
-        text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-        line-height: 1;
-    }
-    
-    h2 {
-        font-family: Roboto, sans-serif;
-        font-size: 18px;
-        color: #111;
-    }
-    
+    background-color: #000020;
+    height: 100vh;
+}
+
+#name {
+    @include flex;
+    @include flex-column;
+    opacity: 1;
+}
+
+#shawn {
+    position: relative;
+    right: 55px;
+    bottom: 50px;
+    opacity: 0;
+}
+
+#sten {
+    position: relative;
+}
+
+#house {
+    position: relative;
+}
+
+img {
+    position: relative;
+}
+
+#last-name {
+    @include flex;
+    @include flex-row;
+    position: relative;
+    right: -65px;
+    bottom: -50px;
+    opacity: 0;
+}
+
+.links {
+    color: white;
     ul {
-        display: flex;
-    }
-    
-    ul li {
-        display: flex;
-        flex-direction: row;
-        background-color: orange;
-        margin: 10px;
-    }
-    
-    a {
-        text-decoration: none;
-        color: #fff;
-        font-family: Roboto, sans-serif;
-        font-size: 20px;
-        padding: 10px 20px;
+        a {
+            color: #FAFAFA;
+        }
         
-    }
-    
-    .contact-link {
-        background-color: #f47c00;
-    }
-    
-    .about-link {
-        background-color: #008772;
-    }
-    
-    .work-link {
-        background-color: #748c9a;
+        li {
+            opacity: 0;
+            display: inline-block;
+            list-style: none;
+            font-size: 20px;
+            
+            
+            
+            -webkit-transition: background-color 0.5s;
+            transition: background-color 0.5s;
+            padding: 10px 30px;
+        }
+        
+        li:hover {
+            background-color: rgba(204, 68, 0, 0.5);
+            cursor: pointer;
+        }
     }
 }
-
-.contact {
-    background-color: #f47c00;
-    color: white;
-}
-
-.work {
-    background-color: #748c9a;    
-    color: white;
-}
-
-.about {
-    background-color: #008772;
-    color: white;
-    padding: 10rem 0;
-
-}
-
 
 .form-content {
     display: flex;
-    flex-direction: row; ;
+    flex-direction: row; 
     /* margin-top: 6rem;
     margin-bottom: 6rem;
     margin-left: auto;
@@ -206,28 +174,69 @@ input[type=text]:focus {
 }
 
 
-// FORM D _-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-
+// FORM C _-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-/_-
 
 
-.form-d {
-    background-image: url('../forest_bg.jpg');
-    font-family: 'Poiret One', cursive;
+.form-c {
+    background-color: #353535;
+    font-family: 'Amatic SC', serif;
     font-size: 17px;
+
+    
 }
 
-.form-d__basic {
-    background-color: rgba(0,0,0,0.6);
+.form-c__basic {
+    background-color: #182904;
+    border: 3px solid #152503;
+    color: #E17D25;
+    -webkit-font-smoothing: antialiased;
+    width: 410px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 20px;
     margin: 10px;
-    color: #DDD;
+    border-radius: 4px;
+    
+    background-color: #0B031D;
+    border: 3px solid #070331;
+
     
     h4 {
         margin: auto;
-        font-size: 35px;
+        font-size: 45px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px solid #1B3004;
+        padding-bottom: 20px;
+        -webkit-font-smoothing: antialiased;
+        margin-bottom: 20px;
+        
+        border-bottom: 2px solid #042730;
     }
     
     input {
         font-size: 20px;
-        padding: 5px 5px 0 5px;
+        color: #ddd;
+        padding: 5px 5px 5px 5px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    
+    input::selection {
+        background-color: #FAD961;
+        
+    }
+    
+    input[type=text] {
+        width: 80%;
+        -webkit-transition: background-color 0.5s;
+        transition: background-color 0.5s;
+    }
+    
+    input[type=text]:focus {
+        background-color: #E17D25;
+        background-color: #FAD961;
+        color: #182904;
     }
     
     input[type=submit] {
@@ -235,34 +244,60 @@ input[type=text]:focus {
         border: none;
         font-weight: bold;
         padding: 5px;
+        background-color: #FAD961;
+        width: 50%;
+        margin: auto;
     }
     
     input[type=submit]:focus {
         padding: 0 10px;
+        
     }
     
     a {
-        font-weight: bold;
+        color: #ddd;
     }
     
-}
-
-.form-d__basic form {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    a:hover {
+        color: #FAD961;
+        text-decoration: none;
+    }
     
+    form {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #FAD961;
+        display: flex;
+        align-items: center;
+    }
+    
+    p {
+       margin: 0; 
+        text-align: center;
+    }
+    
+    label {
+        margin: 5px 0;
+    }
 }
 
-.form-d__field {
+
+
+.form-c__field {
     border: none;
-    border-bottom: 2px solid #EEE;
-    background: none;
+    border-bottom: 2px solid #E17D25;
+    background-color: #1B3004;
     font-size: 14px;
     margin: 5px 0;
     
+    background-color: #042730;
+    
 }
 
-.fields {
-    width: 100%;
-}
+// .fields {
+//     width: 100%;
+// }
+
+
