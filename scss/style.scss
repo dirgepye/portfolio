@@ -10,6 +10,8 @@
 @import url(https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco);
 @import url(https://fonts.googleapis.com/css?family=Sumana);
 
+@import url(https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy);
+
 
 @mixin flex {
     display: -webkit-box;
@@ -108,6 +110,9 @@ img {
     ul {
         a {
             color: #FAFAFA;
+            text-decoration: none;
+            
+
         }
         
         li {
@@ -120,16 +125,36 @@ img {
             
             -webkit-transition: background-color 0.5s;
             transition: background-color 0.5s;
+            
+            
             padding: 10px 30px;
+            border-radius: 2px;
         }
         
         li:hover {
-            background-color: rgba(204, 68, 0, 0.5);
+            background-color: rgba(204, 68, 0, 0.75);
+            
             cursor: pointer;
         }
     }
 }
 
+
+.contact {
+    min-height: 100vh;
+    background-color: #000010;
+    
+    img {
+        padding: 30px;
+    }
+}
+
+
+
+
+
+
+//
 .form-content {
     display: flex;
     flex-direction: row; 

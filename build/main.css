@@ -4,7 +4,6 @@
 @import url(https://fonts.googleapis.com/css?family=Reenie+Beanie);
 @import url(https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco);
 @import url(https://fonts.googleapis.com/css?family=Sumana);
-@import url(https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy);
 .form-a {
   display: flex;
   flex-direction: row;
@@ -258,26 +257,18 @@ img {
 .links {
   color: white; }
   .links ul a {
-    color: #FAFAFA;
-    text-decoration: none; }
+    color: #FAFAFA; }
   .links ul li {
     opacity: 0;
     display: inline-block;
     list-style: none;
     font-size: 20px;
-    -webkit-transition: background-color 0.5s;
-    transition: background-color 0.5s;
-    padding: 10px 30px;
-    border-radius: 2px; }
+    -webkit-transition: border-bottom 0.5s;
+    transition: border-bottom 0.5s;
+    padding: 10px 30px 5px 30px; }
   .links ul li:hover {
-    background-color: rgba(204, 68, 0, 0.75);
+    border-bottom: 4px solid green;
     cursor: pointer; }
-
-.contact {
-  min-height: 100vh;
-  background-color: #000010; }
-  .contact img {
-    padding: 30px; }
 
 .form-content {
   display: flex;
@@ -392,4 +383,4 @@ img {
   margin: 5px 0;
   background-color: #042730; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
