@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+}
+
+#one {
+    height: 100vh;
+    background-color: purple;
+}
+
+#two {
+    height: 30vh;
+    background-color: orange;
+    overflow: scroll;
+}
+
+#three {
+    height: 100vh;
+    background-color: navy;
+}
